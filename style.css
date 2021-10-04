@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+}
+
+.text {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.character {
+    display: inline-block;
+}
+
+.space {
+    display: inline;
+}
+
+.animated {
+    opacity: 0;
+    animation: appear 10s cubic-bezier(.35,.11,.46,.91) infinite forwards;
+}
+@keyframes appear {
+    0% {opacity: 0;}
+    5% {transform: translateY(100%); opacity: 0;}
+    10% {transform: translateY(-10%);}
+    20% {transform: translateY(0%); opacity: 1;}
+    50% {transform: translateY(0%); opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
